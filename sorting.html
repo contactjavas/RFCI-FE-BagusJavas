@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+
+    <style>
+        #numbers, #process, #result, #total {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="post">
+        <div class="field">
+            <label for="numbers" class="label">
+                Masukkan angka yang dipisahkan dengan koma
+            </label>
+            <div class="control">
+                <input type="text" name="numbers" id="numbers" placeholder="4, 9, 7, 5, 8, 9, 3" value="4, 9, 7, 5, 8, 9, 3">
+            </div>
+        </div>
+    </form>
+
+    <div id="process"></div>
+    <div id="result"></div>
+    <div id="total"></div>
+    <script src="sorting.js"></script>
+</body>
+</html>
