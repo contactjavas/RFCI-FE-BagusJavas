@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undo & Redo</title>
+
+    <style>
+        #numbers,
+        #process,
+        #result,
+        #total {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="post">
+        <div class="field">
+            <label for="numbers" class="label">&nbsp;</label>
+            <div class="control">
+                <input type="text" name="text" id="text" placeholder="Insert some text here" value="warna">
+                <button type="button" class="undo-redo" disabled>Change text to activate</button>
+                <button type="button" class="reverse">Click untuk reverse</button>
+            </div>
+        </div>
+    </form>
+    
+    <script src="undo.js"></script>
+</body>
+
+</html>
