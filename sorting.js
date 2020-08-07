@@ -7,7 +7,7 @@
     playSwaps(numbers);
   });
 
-  document.querySelector('#numbers').addEventListener('keypress', function (e) {
+  document.querySelector('#numbers').addEventListener('change', function (e) {
     let numbers = this.value.split(',');
     numbers = numbers.map(x => parseInt(x, 10));
   
@@ -15,8 +15,7 @@
   });
 
   function playSwaps(numbers) {
-    console.log(numbers);
-    const sorted = numbers.slice().sort();
+    const sorted = numbers.slice().sort((a, b) => a - b);
     let count = 0;
     let i = numbers.length;
     let p;
@@ -26,6 +25,8 @@
       result: document.querySelector('#result'),
       total: document.querySelector('#total')
     };
+
+    elms.process.innerHTML = '';
 
     while (i--) {
       if (numbers[i] === sorted[i]) {
